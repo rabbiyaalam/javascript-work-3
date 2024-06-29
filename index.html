@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Character Type Checker</title>
+</head>
+<body>
+    <ul>
+        <a href="two.html">TWO</a>
+        <a href="three.html">THREE</a>  
+        <a href="four.html">FOUR</a>
+        <a href="five.html">FIVE</a>
+        <a href="six.html">SIX</a>
+        <a href="seven.html">SEVEN</a>
+    </ul>
+  <h2>Character Type Checker</h2>
+
+  <script>
+    // Prompt user to enter a character
+    const character = prompt('Enter a character (number or letter)');
+
+
+    const asciiCode = character.charCodeAt(0);
+
+    // Check whether the character is a number, uppercase letter, or lowercase letter
+    if (asciiCode >= 48 && asciiCode <= 57) {
+      alert(`${character} is a number.`);
+    } else if (asciiCode >= 65 && asciiCode <= 90) {
+      alert(`${character} is an uppercase letter.`);
+    } else if (asciiCode >= 97 && asciiCode <= 122) {
+      alert(`${character} is a lowercase letter.`);
+    } else {
+      alert('Invalid input. Please enter a character (number or letter).');
+    }
+  </script>
+</body>
+</html>
